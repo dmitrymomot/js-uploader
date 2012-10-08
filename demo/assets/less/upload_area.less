@@ -1,0 +1,71 @@
+// Upload Area
+//============
+
+.upload-area {
+    background: #fff;
+    border: 1px dashed #ddd;
+    color: #999;
+    font-size: 14px;
+    min-height: 80px;
+    padding: 10px;
+
+    .border-radius(6px);
+
+    &.hover {
+        border-color: #aaa;
+    }
+
+    .file-list {
+        list-style: none;
+        padding: 15px 10px;
+        margin: 0;
+
+        li {
+            .clearfix();
+            margin: 5px 0 15px;
+
+            .icon {
+                float: left;
+                margin: -5px 3px 0 0;
+                width: 28px;
+            }
+
+            .thumbnail {
+                display: block;
+                clear: left;
+                max-width: 150px;
+                max-height: 150px;
+                margin: 0 100% 0 0;
+            }
+
+            .name {
+                color: #333;
+                float: left;
+                font-size: 12px;
+            }
+
+            .close {
+                color: #666;
+                float: left;
+                font-size: 13px;
+                font-weight: normal;
+                margin: 0 10px 0 8px;
+            }
+
+            .progress {
+                float: left;
+                height: 10px;
+                margin: 5px 0 0;
+                width: 110px;
+            }
+
+            .loading {
+                background: url("../img/loading.gif") center center no-repeat;
+                float: left;
+                height: 10px;
+                width: 50px;
+                margin: 5px 0 0;
+            }
+        }
+    }
+}
